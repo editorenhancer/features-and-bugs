@@ -1,18 +1,17 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+labels: ["bug"]
+assignees: ["editorenhancer"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this bug report! Please enter a title above, then fill out the form below.
   - type: input
     id: contact
     attributes:
-      label: Contact Details
+      label: Your Email Address
       description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validations:
@@ -21,21 +20,49 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
+      description: Describe the events surrounding the issue
       placeholder: Tell us what you see!
-      value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: textarea
+    id: what-was-expected
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: What did you expect to happen?
+      description: Briefly, what do you think was supposed to happen?
+      placeholder: Tell us what you expected to see!
     validations:
       required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce the issue
+      description: Please outline steps we can take to reproduce your issue, which will help us identify items to fix.
+      placeholder: e.g. 1. Do this.. 2. Do that..
+    validations:
+      required: true
+  - type: input
+    id: editor-enhancer-version
+    attributes:
+      label: Version of Editor Enhancer
+      description: Enter the version of EE you are using
+      placeholder: e.g. 4.3.2
+    validations:
+      required: true
+  - type: input
+    id: oxygen-version
+    attributes:
+      label: Version of Oxygen
+      description: Enter the version of Oxygen Builder you are using
+      placeholder: e.g. 3.9.1
+    validations:
+      required: true
+  - type: textarea
+    id: third-party-software
+    attributes:
+      label: List any other third-party Oxygen plugins or software you are using
+      placeholder: e.g. OxyNinja, OxyToolbox, etc.
+    validations:
+      required: false
   - type: dropdown
     id: browsers
     attributes:
@@ -46,6 +73,7 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+        - Other
   - type: textarea
     id: logs
     attributes:
@@ -56,7 +84,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree you've checked the [Troubleshooting Guide](https://editorenhancer.com/troubleshooting-guide/) and other [currently open bugs](https://github.com/editorenhancer/features-and-bugs/labels/bug) to verify this is not a duplicate. You have not used profanity or offensive language.
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I agree
           required: true
