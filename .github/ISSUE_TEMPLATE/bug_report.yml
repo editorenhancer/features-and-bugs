@@ -6,9 +6,12 @@ assignees: ["editorenhancer"]
 body:
   - type: markdown
     attributes:
-      value: |
-        "##" Thanks for taking the time to fill out this bug report! Please enter a title above, then fill out the form below.|
+      value: "## Thanks for taking the time to fill out this bug report!" Please enter a title above, then fill out the form below.
         **Of note, please include screenshots where possible!**
+  - type: markdown
+    attributes:
+      value: * Please enter a title above, then fill out the form below.|
+        * Of note, please include screenshots where possible!
   - type: input
     id: contact
     attributes:
