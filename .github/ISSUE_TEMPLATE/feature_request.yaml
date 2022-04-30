@@ -53,7 +53,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree you've checked the [Troubleshooting Guide](https://editorenhancer.com/troubleshooting-guide/) and other [currently open bugs](https://github.com/editorenhancer/features-and-bugs/labels/bug) to verify this is not a duplicate. You have not used profanity or offensive language.
+      description: By submitting this issue, you agree you've checked the [Troubleshooting Guide](https://editorenhancer.com/troubleshooting-guide/) and other [currently open feature requests](https://github.com/editorenhancer/features-and-bugs/labels/enhancement) to verify this is not a duplicate. You have not used profanity or offensive language.
       options:
         - label: I agree
           required: true
