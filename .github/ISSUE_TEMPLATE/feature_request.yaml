@@ -1,0 +1,59 @@
+name: Feature Request
+description: Submit a request for a new feature or enhancements to existing features.
+title: "[Enhancement]: "
+labels: ["enhancement"]
+assignees: ["editorenhancer"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Thanks for taking the time to fill out this feature request!"
+  - type: markdown
+    attributes:
+      value: |
+        * Please enter a title above, then fill out the form below.
+        * Of note, please include screenshots where possible!
+  - type: input
+    id: contact
+    attributes:
+      label: Your Email Address
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: related-to-problem
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: A clear and concise description of what the problem is, if there is one.
+      placeholder: e.g. I'm always frustrated when [...]
+    validations:
+      required: false
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here. This is a great place to leave screenshots!
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree you've checked the [Troubleshooting Guide](https://editorenhancer.com/troubleshooting-guide/) and other [currently open bugs](https://github.com/editorenhancer/features-and-bugs/labels/bug) to verify this is not a duplicate. You have not used profanity or offensive language.
+      options:
+        - label: I agree
+          required: true
